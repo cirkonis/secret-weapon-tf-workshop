@@ -1,57 +1,49 @@
 import StarIcon from "../icons/StarIcon";
+import Image from "next/image";
+import computasLogo from '../public/logo.png'
+import terraformHero from '../public/terraform.png'
+import WorkshopCountdown from "./WorkshopCountdown";
+import TheButton from "./TheButton";
 
 export default function Hero() {
     return <>
         <div className="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
+            {/* LEFT SIDE */}
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8">
                 <div>
                     <div>
-                        <img
-                            className="h-11 w-auto"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=500"
+                        <Image
+
+                            src={computasLogo}
                             alt="Your Company"
+                            width={550}
+                            height={230}
                         />
                     </div>
                     <div className="mt-20">
                         <div>
                             <a href="#" className="inline-flex space-x-4">
-                                <span className="rounded px-2.5 py-1 text-sm font-semibold bg-computasBlue text-blue-900">
-                                    What's new
+                                <span className="rounded px-2.5 py-1 text-md font-semibold text-computas-primary">
+                                    Developer Professional Team Workshop
                                 </span>
-                                <span className="inline-flex items-center space-x-1 text-sm font-medium text-blue-400">
-                                    <span>Just shipped version 0.1.0</span>
+                                <span className="inline-flex items-center space-x-1 text-md font-medium text-terraform">
+                                    <span>November 23, 2022 16:00</span>
                                 </span>
                             </a>
                         </div>
                         <div className="mt-6 sm:max-w-xl">
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                                Issue management for growing teams
+                            <h1 className="text-4xl font-bold tracking-tight text-computas-primary sm:text-5xl">
+                                Throwing some light on <span className="text-terraform"> Terraform</span>
                             </h1>
                             <p className="mt-6 text-xl text-gray-500">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                Some say it takes a key to unlock secrets. We think it takes a secret weapon. Join us for a workshop run by none other than the Computas secret weapon
+                                <span className="text-terraform font-bold"> Alin</span>!
                             </p>
                         </div>
-                        <form action="#" className="mt-12 sm:flex sm:w-full sm:max-w-lg">
-                            <div className="min-w-0 flex-1">
-                                <label htmlFor="hero-email" className="sr-only">
-                                    Email address
-                                </label>
-                                <input
-                                    id="hero-email"
-                                    type="email"
-                                    className="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-rose-500 focus:ring-rose-500"
-                                    placeholder="Enter your email"
-                                />
-                            </div>
-                            <div className="mt-4 sm:mt-0 sm:ml-3">
-                                <button
-                                    type="submit"
-                                    className="block w-full rounded-md border border-transparent bg-blue-400 px-5 py-3 text-base font-medium text-white shadow hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10"
-                                >
-                                    Notify me
-                                </button>
-                            </div>
-                        </form>
+                        <div className=" flex justify-center items-center mt-6 sm:flex sm:w-full sm:max-w-lg">
+                            <WorkshopCountdown></WorkshopCountdown>
+                            <TheButton></TheButton>
+                        </div>
                         <div className="mt-6">
                             <div className="inline-flex items-center divide-x divide-gray-300">
                                 <div className="flex pr-5">
@@ -62,15 +54,15 @@ export default function Hero() {
                                     <StarIcon empty={true}></StarIcon>
                                 </div>
                                 <div className="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
-                                    <span className="font-medium text-gray-900">Rated 5 stars</span> by {' '}
-                                    <span className="font-medium text-rose-500">MIKE</span>
+                                    <span className="font-medium text-gray-900">Rated 4 out of 5 stars</span> by {' '}
+                                    <span className="font-bold text-terraform">Mike</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            {/* RIGHT SIDE */}
             <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
                 <div className="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                     <div className="hidden sm:block">
@@ -98,10 +90,12 @@ export default function Hero() {
                         </svg>
                     </div>
                     <div className="relative -mr-40 pl-4 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                        <img
+                        <Image
                             className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                            src="https://tailwindui.com/img/component-images/task-app-rose.jpg"
-                            alt=""
+                            src={terraformHero}
+                            alt="Terraform with a lamp"
+                            width={650}
+                            height={900}
                         />
                     </div>
                 </div>
