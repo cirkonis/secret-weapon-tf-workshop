@@ -40,7 +40,7 @@ export default function Hero() {
                         </div>
                         <div className="flex justify-center items-center mt-6 sm:flex sm:w-full sm:max-w-lg">
                             <div className='border-computas-primary bg-computas-primary border-1 p-6 rounded-md'>
-                            <WorkshopCountdown></WorkshopCountdown>
+                                <WorkshopCountdown></WorkshopCountdown>
                             </div>
                         </div>
                         <div className="mt-6">

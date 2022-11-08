@@ -13,7 +13,7 @@ export default function WorkshopCountdown() {
       precision={3}
       autoStart={true}
       renderer={props => 
-      <div>
+      <div className='w-96 flex justify-between'>
         <span className='text-computas-secondary text-md font-bold'>{props.days} </span>
         <span className='text-white text-md font-bold mr-2'>Days </span>
         <span className='text-computas-secondary text-md font-bold'>{props.hours} </span>
