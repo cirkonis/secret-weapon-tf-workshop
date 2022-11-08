@@ -59,7 +59,7 @@ export default function Hero() {
                                     <StarIcon></StarIcon>
                                     <StarIcon></StarIcon>
                                     <StarIcon></StarIcon>
-                                    <StarIcon></StarIcon>
+                                    <StarIcon empty={true}></StarIcon>
                                 </div>
                                 <div className="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
                                     <span className="font-medium text-gray-900">Rated 5 stars</span> by {' '}
