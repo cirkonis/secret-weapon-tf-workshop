@@ -14,14 +14,14 @@ export default function WorkshopCountdown() {
       autoStart={true}
       renderer={props => 
       <div>
-        <span className='text-terraform text-md font-bold'>{props.days} </span>
-        <span className='text-computas-primary text-md font-bold'>Days </span>
-        <span className='text-terraform text-md font-bold'>{props.hours} </span>
-        <span className='text-computas-primary text-md font-bold'>Hours </span>
-        <span className='text-terraform text-md font-bold'>{props.minutes} </span>
-        <span className='text-computas-primary text-md font-bold'>Minutes </span>
-        <span className='text-terraform text-md font-bold'>{props.seconds} </span>
-        <span className='text-computas-primary text-md font-bold'>Seconds </span>
+        <span className='text-computas-secondary text-md font-bold'>{props.days} </span>
+        <span className='text-white text-md font-bold mr-2'>Days </span>
+        <span className='text-computas-secondary text-md font-bold'>{props.hours} </span>
+        <span className='text-white text-md font-bold mr-2'>Hours </span>
+        <span className='text-computas-secondary text-md font-bold'>{props.minutes} </span>
+        <span className='text-white text-md font-bold mr-2'>Minutes </span>
+        <span className='text-computas-secondary text-md font-bold'>{props.seconds} </span>
+        <span className='text-white text-md font-bold'>Seconds </span>
       </div>}
     ></Countdown>
   </>
