@@ -1,12 +1,33 @@
-export default function TheButton() {
-    return <>
-        <div className="mt-4 sm:mt-0 sm:ml-3">
-            <button
-                type="submit"
-                className="block w-full rounded-md border border-transparent bg-computas-primary px-5 py-3 text-base font-medium text-computas-secondary shadow hover:bg-terraform hover:text-white focus:outline-none focus:ring-2 focus:ring-computas-secondayr focus:ring-offset-2 sm:px-10"
-            >
-                Let me in!
-            </button>
-        </div>
-    </>
-}
+import React from "react";
+import { atcb_init } from "add-to-calendar-button";
+import 'add-to-calendar-button/assets/css/atcb.css';
+
+const TheButton = () => {
+    React.useEffect( () => { atcb_init() }, []);
+    return (
+      <div className="atcb">
+        { '{' }
+          "name":"Secret Weapon Terraform Workshop",
+          "description":"A nice description does not hurt",
+          "startDate":"2022-11-23",
+          "endDate":"2022-11-23",
+          "startTime":"16:00",
+          "endTime":"18:00",
+          "location":"Somewhere in the office",
+          "label":"Going?",
+          "options":[
+            "Apple",
+            "Google",
+            "iCal",
+            "Microsoft365",
+            "Outlook.com",
+            "Yahoo"
+          ],
+          "timeZone":"Europe/Berlin",
+          "iCalFileName":"Reminder-Event"
+        { '}' }
+      </div>
+    );
+  }
+
+  export default TheButton

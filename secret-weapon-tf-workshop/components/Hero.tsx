@@ -5,6 +5,7 @@ import terraformHero from '../public/terraform.png'
 import WorkshopCountdown from "./WorkshopCountdown";
 import TheButton from "./TheButton";
 
+
 export default function Hero() {
     return <>
         <div className="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
@@ -42,6 +43,7 @@ export default function Hero() {
                             <div className='border-computas-primary bg-computas-primary border-1 p-6 rounded-md'>
                                 <WorkshopCountdown></WorkshopCountdown>
                             </div>
+                            <TheButton></TheButton>
                         </div>
                         <div className="mt-6">
                             <div className="inline-flex items-center divide-x divide-gray-300">
