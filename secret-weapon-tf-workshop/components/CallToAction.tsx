@@ -1,3 +1,4 @@
+import TheButton from "./TheButton";
 import WorkshopCountdown from "./WorkshopCountdown";
 
 export default function CallToAction() {
@@ -60,6 +61,9 @@ export default function CallToAction() {
                         </div>
                         <div className="sm:text-center mt-8 font-bold text-white">
                             <p>See you there &#128075;</p>
+                        </div>
+                        <div className="sm:text-center mt-8 font-bold text-white">
+                            <TheButton></TheButton>
                         </div>
                     </div>
                 </div>
