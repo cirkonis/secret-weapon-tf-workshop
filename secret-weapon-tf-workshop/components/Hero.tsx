@@ -5,7 +5,6 @@ import terraformHero from '../public/terraform.png'
 import WorkshopCountdown from "./WorkshopCountdown";
 import TheButton from "./TheButton";
 
-
 export default function Hero() {
     return <>
         <div className="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
@@ -43,7 +42,9 @@ export default function Hero() {
                             <div className='border-computas-primary bg-computas-primary border-1 p-6 rounded-md'>
                                 <WorkshopCountdown></WorkshopCountdown>
                             </div>
-                            <TheButton></TheButton>
+                            <div className="sm:text-center w-32 mt-8 font-bold text-computas-primary">
+                                <p>See you there &#128075;</p>
+                            </div>
                         </div>
                         <div className="mt-6">
                             <div className="inline-flex items-center divide-x divide-gray-300">
@@ -90,7 +91,7 @@ export default function Hero() {
                             <rect width={404} height={392} fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" />
                         </svg>
                     </div>
-                    <div className="relative -mr-40 pl-4 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
+                    <div className="relative md:-mr-40 pl-4 md:w-auto sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
                         <Image
                             className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                             src={terraformHero}

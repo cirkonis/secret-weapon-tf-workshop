@@ -46,10 +46,10 @@ export default function CallToAction() {
                     </div>
                     <div className="relative">
                         <div className="sm:text-center">
-                            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                            <h2 className="text-3xl font-bold tracking-tight text-white text-center sm:text-4xl">
                                 Want to do something while you wait?
                             </h2>
-                            <p className="mx-auto mt-6 max-w-2xl text-lg font-bold cursor-pointer text-computas-secondary">
+                            <p className="mx-auto mt-6 max-w-2xl text-lg font-bold cursor-pointer text-center text-computas-secondary">
                                 <span className="text-white">Check out the </span>
                                 <a href="https://developer.hashicorp.com/terraform/docs" target="_blank" rel="noreferrer"> Terraform docs</a>
                             </p>
@@ -59,10 +59,10 @@ export default function CallToAction() {
                                 <WorkshopCountdown></WorkshopCountdown>
                             </div>
                         </div>
-                        <div className="sm:text-center mt-8 font-bold text-white">
+                        <div className="text-center mt-8 font-bold text-white">
                             <p>See you there &#128075;</p>
                         </div>
-                        <div className="sm:text-center mt-8 font-bold text-white">
+                        <div className="text-center mt-8 font-bold text-white">
                             <TheButton></TheButton>
                         </div>
                     </div>
