@@ -25,7 +25,7 @@ export default function Hero() {
                                 <span className="rounded px-2.5 py-1 text-md font-semibold text-computas-primary">
                                     Developer Professional Team Workshop
                                 </span>
-                                <span className="inline-flex items-center space-x-1 text-md font-medium text-terraform">
+                                <span className="inline-flex items-center space-x-1 text-lg font-bold text-computas-secondary">
                                     <span>November 23, 2022 16:00</span>
                                 </span>
                             </a>
@@ -35,13 +35,13 @@ export default function Hero() {
                                 Throwing some light on <span className="text-terraform"> Terraform</span>
                             </h1>
                             <p className="mt-6 text-xl text-gray-500">
-                                Some say it takes a key to unlock secrets. We think it takes a secret weapon. Join us for a workshop run by none other than the Computas secret weapon
-                                <span className="text-terraform font-bold"> Alin</span>!
+                                Some say it takes a key to unlock secrets. We think it takes a secret weapon. Join us for a workshop run by none other than the Computas secret weapon!
                             </p>
                         </div>
-                        <div className=" flex justify-center items-center mt-6 sm:flex sm:w-full sm:max-w-lg">
+                        <div className="flex justify-center items-center mt-6 sm:flex sm:w-full sm:max-w-lg">
+                            <div className='border-computas-primary bg-computas-primary border-1 p-6 rounded-md'>
                             <WorkshopCountdown></WorkshopCountdown>
-                            <TheButton></TheButton>
+                            </div>
                         </div>
                         <div className="mt-6">
                             <div className="inline-flex items-center divide-x divide-gray-300">
@@ -53,8 +53,8 @@ export default function Hero() {
                                     <StarIcon empty={true}></StarIcon>
                                 </div>
                                 <div className="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">
-                                    <span className="font-medium text-gray-900">Rated 4 out of 5 stars</span> by {' '}
-                                    <span className="font-bold text-terraform">Mike</span>
+                                    <span className="font-medium text-gray-900">Pre-rated 4 out of 5 stars</span> by {' '}
+                                    <span className="font-bold text-computas-secondary">Mike</span>
                                 </div>
                             </div>
                         </div>
