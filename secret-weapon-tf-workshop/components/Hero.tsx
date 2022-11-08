@@ -13,7 +13,6 @@ export default function Hero() {
                 <div>
                     <div>
                         <Image
-
                             src={computasLogo}
                             alt="Your Company"
                             width={550}
