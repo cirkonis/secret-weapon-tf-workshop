@@ -1,6 +1,6 @@
 import WorkshopCountdown from "./WorkshopCountdown";
 
-export default function () {
+export default function CallToAction() {
     return <>
         <div className="relative mt-24 sm:mt-32 sm:py-16">
             <div aria-hidden="true" className="hidden sm:block">
@@ -50,7 +50,7 @@ export default function () {
                             </h2>
                             <p className="mx-auto mt-6 max-w-2xl text-lg font-bold cursor-pointer text-computas-secondary">
                                 <span className="text-white">Check out the </span>
-                                <a href="https://developer.hashicorp.com/terraform/docs" target="_blank"> Terraform docs</a>
+                                <a href="https://developer.hashicorp.com/terraform/docs" target="_blank" rel="noreferrer"> Terraform docs</a>
                             </p>
                         </div>
                         <div className="mt-8 w-full flex justify-center">
