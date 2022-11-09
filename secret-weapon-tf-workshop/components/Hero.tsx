@@ -35,16 +35,14 @@ export default function Hero() {
                                 Throwing some light on <span className="text-terraform"> Terraform</span>
                             </h1>
                             <p className="mt-6 text-xl text-gray-500">
-                                Some say it takes a key to unlock secrets. We think it takes a secret weapon. Join us for a workshop run by none other than the Computas secret weapon!
+                                Some say it takes a key to unlock secrets. We think it takes a weapon. Join us for a workshop run by none other than the Computas secret weapon!
                             </p>
                         </div>
                         <div className="flex justify-center items-center mt-6 sm:flex sm:w-full sm:max-w-lg">
                             <div className='border-computas-primary bg-computas-primary border-1 p-6 rounded-md'>
                                 <WorkshopCountdown></WorkshopCountdown>
                             </div>
-                            <div className="sm:text-center w-32 mt-8 font-bold text-computas-primary">
-                                <p>See you there &#128075;</p>
-                            </div>
+                            <TheButton></TheButton>
                         </div>
                         <div className="mt-6">
                             <div className="inline-flex items-center divide-x divide-gray-300">
