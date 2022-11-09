@@ -26,7 +26,7 @@ export default function Hero() {
                                     Developer Professional Team Workshop
                                 </span>
                                 <span className="inline-flex items-center space-x-1 text-lg font-bold text-computas-secondary">
-                                    <span>November 23, 2022 16:00</span>
+                                    <span>November 22, 2022 16:00</span>
                                 </span>
                             </a>
                         </div>

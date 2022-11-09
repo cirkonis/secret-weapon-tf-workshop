@@ -5,7 +5,7 @@ import Countdown, { calcTimeDelta } from 'react-countdown';
 const Completionist = () => <span className='text-md font-medium text-terraform'>You missed it :(</span>;
 
 export default function WorkshopCountdown() {
-  const timeDelta = calcTimeDelta('2022-11-23T16:00:00')
+  const timeDelta = calcTimeDelta('2022-11-22T16:00:00')
   return <>
     <Countdown
       date={Date.now() + timeDelta.total}
